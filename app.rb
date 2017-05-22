@@ -25,6 +25,5 @@ get '/makers' do
 end
 
 get '/cat' do
-  '<img src="http://bit.ly/1eze8aE">'
-  # '<a href="http://bit.ly/1eze8aE">bbc</a>'
+  erb(:index)
 end
