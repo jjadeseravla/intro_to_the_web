@@ -23,3 +23,8 @@ end
 get '/makers' do
   "Why is it so difficult"
 end
+
+get '/cat' do
+  '<img src="http://bit.ly/1eze8aE">'
+  # '<a href="http://bit.ly/1eze8aE">bbc</a>'
+end
