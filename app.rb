@@ -24,7 +24,13 @@ get '/makers' do
   "Why is it so difficult"
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["pollo", "chicken", "baby"].sample
+  erb(:index)
+end
+
+get '/name-cat' do
+  p params
+  @name = params[:name]
   erb(:index)
 end
