@@ -25,5 +25,6 @@ get '/makers' do
 end
 
 get '/cat' do
+  @name = ["pollo", "chicken", "baby"].sample
   erb(:index)
 end
