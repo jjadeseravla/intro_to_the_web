@@ -1,12 +1,15 @@
 <!-- erb <h1>"My name is"</hi>
 '<style> img {border: 9px dashed red;}</style>
 <img src="http://bit.ly/1eze8aE">' -->
-
+<% if @name%>
 <h1>My name is <%=@name %></h1>
+<% end %>
 <!-- <div style='border: 3px dashed red'> -->
 <img src='http://bit.ly/1eze8aE' style='border: 3px dashed red'>
 <!-- </div> -->
+<% if !@name %>
 <form action="/name-cat">
   <input type="text" name="name">
   <input type="submit" value="Submit">
 </form>
+<% end %>
